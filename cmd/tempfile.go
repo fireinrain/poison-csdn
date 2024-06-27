@@ -27,9 +27,9 @@ var tempfileCmd = &cobra.Command{
 		tempfileName, _ := cmd.Flags().GetString("file")
 		if bandwords == " " {
 			//set default banded words
-			bandwords = baned.AntiCSDNBanner[0] + "\n" + baned.BandWords + "\n" + baned.BandWords2 + "\n" + baned.AntiCSDNBanner[1]
+			bandwords = baned.AntiCSDNBanner[0] + "\n" + baned.BandWords + "\n" + baned.BandWords2 + "\n" + baned.AntiCSDNBanner[1] + "\n"
 		} else {
-			bandwords = baned.AntiCSDNBanner[0] + "\n" + bandwords + "\n" + baned.AntiCSDNBanner[1]
+			bandwords = baned.AntiCSDNBanner[0] + "\n" + bandwords + "\n" + baned.AntiCSDNBanner[1] + "\n"
 		}
 		PoisonWithTempfile(repoPath, bandwords, tempfileName, enableGitCommit)
 	},
