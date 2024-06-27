@@ -14,7 +14,7 @@ links in READMEs with gitcode links.
 Just to check, I searched for my ID on gitcode and found that small projects I wrote five years ago were directly copied
 over, despite the fact that I don't even have an account on their platform.
 
-So，I write this tiny tool to poison some baned words to repo to prevent from being stolen
+So,I write this tiny tool to poison some baned words to repo to prevent from being stolen
 
 ![](dist/img.png)
 ![](dist/img_1.png)
