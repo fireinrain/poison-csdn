@@ -18,7 +18,7 @@ var licenseCmd = &cobra.Command{
 		repoPath, _ := cmd.Flags().GetString("path")
 		//get abs path
 		repoPath, err := filepath.Abs(repoPath)
-		println(repoPath)
+		//println(repoPath)
 		if err != nil {
 			fmt.Printf("> Get absolute path error: %v\n", err)
 			return

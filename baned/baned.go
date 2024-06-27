@@ -1,7 +1,11 @@
 package baned
 
 var AntiCSDNBanner = []string{
-	"########Anti CSDN Stolen Repo With Baned Words########",
+	"########Anti CSDN Stolen Repo With Baned Words########\n" + `
+CSDN has unauthorizedly created accounts on their GitCode platform for GitHub users 
+and cloned repositories from their accounts without permission. We strongly protest and boycott such rogue behavior.
+As a response, we should include banned keywords in our repository files - 20240626 Fireinrain.
+`,
 	"######Anti CSDN Stolen Repo With Baned Words End######",
 }
 
