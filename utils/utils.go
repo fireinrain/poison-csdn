@@ -37,8 +37,9 @@ func CheckIfReadmeExist(fileDir string) bool {
 }
 
 // CheckIfTempFileExist 判断是否为临时文件
-func CheckIfTempFileExist(fileDir string) bool {
-	return CheckIfFileExist("tempfile.txt", fileDir)
+func CheckIfTempFileExist(fileDir string, tempfileName string) bool {
+
+	return CheckIfFileExist(tempfileName, fileDir)
 }
 
 // CheckIfGitRepoExist 判断是否为git仓库
@@ -128,4 +129,19 @@ func GitAddAndCommit(fileName string, fileDir string) {
 	}
 
 	fmt.Println("> Anti data has been commit with git.")
+}
+
+// CompactDispalyMarkdown 压缩显示
+func CompactDispalyMarkdown(info string) string {
+	formatStr := `
+<details>
+<summary>Anti For Repo Stolen</summary>
+%s
+</details>
+`
+
+	compactMdStr := fmt.Sprintf(formatStr, info)
+
+	return compactMdStr
+
 }

@@ -70,7 +70,3 @@ func PoisonWithLicense(repoPath string, antiWords string, enableGitCommit bool) 
 	}
 
 }
-
-func init() {
-	rootCmd.AddCommand(licenseCmd)
-}

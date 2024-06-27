@@ -1,6 +1,9 @@
 package utils
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestCheckIfFileExist(t *testing.T) {
 	type args struct {
@@ -70,4 +73,9 @@ func TestCheckIfGitRepoExist(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestCompactDispalyMarkdown(t *testing.T) {
+	markdown := CompactDispalyMarkdown("fuck stolen")
+	fmt.Println(markdown)
 }
